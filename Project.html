@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multiply</title>
+    <link href="https://fonts.cdnfonts.com/css/childwood-2" rel="stylesheet" />
+
+    <style></style>
+  </head>
+  <body
+    style="
+      background: linear-gradient(to right, #1f4037, #99f2c8);
+      font-family: Childwood;
+      text-align: center;
+      font-size: 35px;
+    "
+  >
+    <h2>JAVASCRIPT ASYNC/AWAIT ===> ACP</h2>
+    <h1 id="result"></h1>
+
+    <script>
+      async function mult(a, b) {
+        let response = (await a) * b;
+        display(response);
+      }
+
+      function display(product) {
+        document.getElementById("result").innerHTML = product;
+      }
+
+      mult(420, 6952);
+    </script>
+  </body>
+</html>
